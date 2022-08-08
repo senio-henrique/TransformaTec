@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <form action="">
+            <table>
+                <tr>
+                    <th>Formulário de Cadastro</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="nome">Nome</label>
+                    </td>
+
+                    <td><input type="text" name="nome" id="nome" required/></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="sobrenome">Sobrenome</label>
+                    </td>
+
+                    <td><input type="text" name="sobrenome" id="sobrenome" required/></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="endereco">Endereço</label>
+                    </td>
+
+                    <td>
+                        <textarea rows = "3" name="endereco" id="endereco" required></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="disciplinas">Disciplinas</label>
+                    </td>
+
+                    <td>
+                        <input type="checkbox"/>Programação <br/>
+
+                        <input type="checkbox"/>Lógica <br/>
+
+                        <input type="checkbox"/>Algoritmo <br/>
+
+                        <input type="checkbox"/>Banco de Dados <br/>
+
+                        <input type="checkbox"/>Desenvolvimento Mobile <br/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="genero">Gênero</label>
+                    </td>
+
+                    <td>
+                        <input type="radio" name="s1" id="m" checked/>
+                        <label>Masculino</label>
+
+                        <input type="radio" name="s1" id="f">
+                        <label>Feminino</label>
+
+                        <input type="radio" name="s1" id="n">
+                        <label>Não Informar</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="idade">Idade</label>
+                    </td>
+
+                    <td>
+                        <select name="idade" id="idade">
+                            <option value="">Selecione</option>
+                            <option value="c">Criança</option>
+                            <option value="a">Adulto</option>
+                            <option value="i">Idoso</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="picture">Foto de Perfil</label>
+                    </td>
+
+                    <td>
+                        <input type="file" name="picture" id="picture" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="Cadastrar" name="cadastrar" id="cadastrar">
+
+                        <input type="reset" value="Limpar"
+                        name="limpar" id="cadastrar">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
