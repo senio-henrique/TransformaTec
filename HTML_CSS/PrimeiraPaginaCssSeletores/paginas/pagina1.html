@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha primeira página com Estilos e Seletores</title>
+    <style>
+        /* Seletor por Elementos */
+        div {
+            width: 400px;
+            height: 200px;
+            background-color: bisque;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        /* Seletor por Classe */
+        .p1 {
+            color: cadetblue;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        /* Seletor por IDs */
+        #p1 {
+            color: darkorange;
+            font-size: 30px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        /* Seletor por Atributo */
+        p[name="p3"] {
+            color: darkgreen;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 200px;
+            height: 30px;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        input:hover {
+            border-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="p1">Texto na primeira div</p>
+    </div>
+
+    <div>
+        <p class="p1">Texto na segunda div</p>
+    </div>
+
+    <div>
+        <p name="p3">Texto na terceira div</p>
+        <input type="text" placeholder="Seu texto aqui... ">
+    </div>
+</body>
+</html>
